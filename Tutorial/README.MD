@@ -152,3 +152,16 @@ Transparan sesuai dengan nama fungsinya membuat gambar menjadi transparan. Dalam
 
 Wireframe digunakan untuk mengaktifkan wireframenya. Dan visible untuk mengubah gambar menjadi terlihat atau tidak.
 
+
+### Jenis-jenis material
+Pada bagian diatas kita sudah mencoba membuat sebuah kubus dengan material basic. Sekarang kita coba untuk membuat kubus dengan material lambert dan phong. Caranya adalah kita perlu mengubah kodingannya menjadi seperti ini
+```javascript
+var meshMaterial = new THREE.MeshLambertMaterial({color: 0x7777ff});
+//atau
+var meshMaterial = new THREE.MeshPhongMaterial({color: 0x7777ff});
+```
+Berikut ini adalah gambar lingkaran dengan material lambert
+![Gambar2](/Tutorial/images/foto2.png)
+Berikut ini adalah gambar lingkaran dengan material phong
+![Gambar3](/Tutorial/images/foto3.png)
+Bisa dilihat bahwa perbedaan lambert dan phong adalah di dalam phong ada cahaya yang keluar dari permukaan
