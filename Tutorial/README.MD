@@ -135,7 +135,7 @@ scene.add(cube);
 ```
 Hasilnya akan menjadi seperti ini:
 ![Gambar1](/Tutorial/images/foto1.png)
-Kita juga bisa mengubah-ubah bentuk yang mau dibuat. Kita bisa membuat lingkaran dengan cara mengubah cube menjadi *sphere*. Kita juga bisa membuat shape dengan cara mengubah cube menjadi *plane*.
+Kita juga bisa mengubah-ubah bentuk yang mau dibuat. Kita bisa membuat lingkaran dengan cara mengubah cube menjadi *sphere*. Kita juga bisa membuat plane dengan cara mengubah cube menjadi *plane*.
 
 
 Setelah itu kita mulai masuk ke fungsi-fungsi dasar material:
@@ -148,7 +148,7 @@ meshMaterial.side = THREE.FrontSide;
 meshMaterial.side = THREE.BackSide;
 meshMaterial.side = THREE.DoubleSide;
 ```
-Transparan sesuai dengan nama fungsinya membuat gambar menjadi transparan. Dalam transparan kita bisa mengubah *opcaity*nya sehingga gambar menjadi sedikit tidak terlihat.
+Transparan sesuai dengan nama fungsinya membuat gambar menjadi transparan. Dalam transparan kita bisa mengubah *opacity*nya sehingga gambar menjadi sedikit tidak terlihat.
 
 Wireframe digunakan untuk mengaktifkan wireframenya. Dan visible untuk mengubah gambar menjadi terlihat atau tidak.
 
