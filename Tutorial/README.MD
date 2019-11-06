@@ -124,3 +124,31 @@ File dari masing-masing library bisa di download pada folder github ini
 ```
 Di dalam body, akan ada canvas untuk tempat membuat kubus/lingkaran/shape nanti. Kita perlu mendifiniskan posisi dan jenis material apa yang akan digunakan dalam pembuatan bentuk. Kita juga perlu mendefiniskan posisi camera, dan juga spotlight serta ambientlight yang sudah dijelaskan di bab sebelumnya.
 
+### MeshBasicMaterial
+Untuk membuat material dengan tipe basic. Kita perlu mengubah kodingan yang di atas di bagian ini
+```javascript
+ var meshMaterial = new THREE.MeshBasicMaterial({color: 0x7777ff});
+```
+Kemudian untuk mengambar kubus, kita perlu menambahkan
+```javascript
+scene.add(cube);
+```
+Hasilnya akan menjadi seperti ini:
+![Gambar1](/Tutorial/images/foto1.png)
+Kita juga bisa mengubah-ubah bentuk yang mau dibuat. Kita bisa membuat lingkaran dengan cara mengubah cube menjadi *sphere*. Kita juga bisa membuat shape dengan cara mengubah cube menjadi *shape*.
+
+
+Setelah itu kita mulai masuk ke fungsi-fungsi dasar material:
+```javascript
+meshMaterial.transparent=true;
+meshMaterial.opacity = 0.2;
+meshMaterial.wireframe = 1;
+meshMaterial.visible = true;
+meshMaterial.side = THREE.FrontSide;
+meshMaterial.side = THREE.BackSide;
+meshMaterial.side = THREE.DoubleSide;
+```
+Transparan sesuai dengan nama fungsinya membuat gambar menjadi transparan. Dalam transparan kita bisa mengubah *opcaity*nya sehingga gambar menjadi sedikit tidak terlihat.
+
+Wireframe digunakan untuk mengaktifkan wireframenya. Dan visible untuk mengubah gambar menjadi terlihat atau tidak.
+

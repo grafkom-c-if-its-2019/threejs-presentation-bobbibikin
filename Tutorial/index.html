@@ -85,15 +85,17 @@
             var oldContext = null;
             
             //edit-edit disini ya
-            // meshMaterial.wireframe = 1;
+            meshMaterial.transparent=true;
+            meshMaterial.opacity = 0.2;
+            meshMaterial.wireframe = 1;
             meshMaterial.visible = true;
             // meshMaterial.side = THREE.FrontSide;
             // meshMaterial.side = THREE.BackSide;
             // meshMaterial.side = THREE.DoubleSide;
 
             //fungsi phong
-            meshMaterial.shininess = 100;
-            meshMaterial.metal = true;
+            // meshMaterial.shininess = 100;
+            // meshMaterial.metal = true;
             render();
 
             function render() {
