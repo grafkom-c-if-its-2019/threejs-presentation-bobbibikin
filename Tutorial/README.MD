@@ -165,3 +165,14 @@ Berikut ini adalah gambar lingkaran dengan material lambert
 Berikut ini adalah gambar lingkaran dengan material phong
 ![Gambar3](/Tutorial/images/foto3.png)
 Bisa dilihat bahwa perbedaan lambert dan phong adalah di dalam phong ada cahaya yang keluar dari permukaan
+
+### Fungsi khusus Phong dan Lambert
+Phong dan Lambert memiliki beberapa fungsi khusus untuk mengaturnya. Contohnya adalah Shininess dan metal untuk phong.
+Kita perlu menambahkan kodingan ini:
+```Javascript
+meshMaterial.shininess = 100;
+meshMaterial.metal = true;
+```
+*shininess* berguna untuk menggambarkan seberapa mengkilau (shiny) objek tersebut.
+
+*metal* berguna untuk sedikit mengubah metode perhitungan warna dari pixelnya agar terlihat sedikit lebih *metal*. (dengan catatan perubahan yang terlihat sangant minimum).
