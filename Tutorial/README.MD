@@ -135,7 +135,7 @@ scene.add(cube);
 ```
 Hasilnya akan menjadi seperti ini:
 ![Gambar1](/Tutorial/images/foto1.png)
-Kita juga bisa mengubah-ubah bentuk yang mau dibuat. Kita bisa membuat lingkaran dengan cara mengubah cube menjadi *sphere*. Kita juga bisa membuat shape dengan cara mengubah cube menjadi *shape*.
+Kita juga bisa mengubah-ubah bentuk yang mau dibuat. Kita bisa membuat lingkaran dengan cara mengubah cube menjadi *sphere*. Kita juga bisa membuat shape dengan cara mengubah cube menjadi *plane*.
 
 
 Setelah itu kita mulai masuk ke fungsi-fungsi dasar material:
@@ -175,4 +175,4 @@ meshMaterial.metal = true;
 ```
 *shininess* berguna untuk menggambarkan seberapa mengkilau (shiny) objek tersebut.
 
-*metal* berguna untuk sedikit mengubah metode perhitungan warna dari pixelnya agar terlihat sedikit lebih *metal*. (dengan catatan perubahan yang terlihat sangant minimum).
+*metal* berguna untuk sedikit mengubah metode perhitungan warna dari pixelnya agar terlihat sedikit lebih *metal*. (dengan catatan perubahan yang terlihat sangant minimum).    
